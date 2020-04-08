@@ -7,6 +7,8 @@
 - Eureka
 - Ribbon
 - Swagger 2
+- Sleuth
+- Zipkin
 
 ### How to run
 
@@ -23,6 +25,7 @@ $ gradle bootjar
 // ============ Port Info =============
 // eureka-server: 8761
 // zuul-application: 8762
+// zipkin-server: 9411
 // ribbon-client: 8888
 // ribbon-server: 9090, 9091, 9092 ...
 // ====================================
@@ -38,4 +41,6 @@ $ java -jar -Dserver.port=XXXX build/libs/YYYY.jar
 6. Open the browser and go to http://localhost:8762/ribbonclient/frontend to check how Zuul routes request
 
 7. Open the browser and go to http://localhost:8888/swagger-ui.html to check the swagger dashboard for ribbon-client
+
+8. Open the browser and go to http://localhost:9411/zipkin/ to check the Zipkin server dashboard
 
