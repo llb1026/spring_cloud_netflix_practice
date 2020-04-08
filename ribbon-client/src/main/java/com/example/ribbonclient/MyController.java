@@ -18,9 +18,9 @@ public class MyController {
 	@Autowired
 	RestTemplate restTemplate;
 	
-	@RequestMapping("/client/frontend")
+	@RequestMapping("/frontend")
 	public String hi() {
-		String randomString = this.restTemplate.getForObject("http://server/backend", String.class);
+		String randomString = this.restTemplate.getForObject("http://ribbonserver/backend", String.class);
 		return "Server Response: " + randomString;
 	}
 }
