@@ -6,6 +6,7 @@
 - Spring Boot 2.2.6
 - Eureka
 - Ribbon
+- Swagger 2
 
 ### How to run
 
@@ -35,3 +36,6 @@ $ java -jar -Dserver.port=XXXX build/libs/YYYY.jar
 5. Open the browser and go to http://localhost:8888/frontend to check how Ribbon works
 
 6. Open the browser and go to http://localhost:8762/ribbonclient/frontend to check how Zuul routes request
+
+7. Open the browser and go to http://localhost:8888/swagger-ui.html to check the swagger dashboard for ribbon-client
+
