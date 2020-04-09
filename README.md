@@ -34,7 +34,7 @@ $ java -jar -Dserver.port=XXXX build/libs/YYYY.jar
 
 3. Open the browser and go to http://localhost:8761 to check the Eureka server dashboard
 
-4. Open the browser and go to http://localhost:8762 to check all the routes that Zuul can use according to the Eureka
+4. Open the browser and go to http://localhost:8762/actuator/routes to check all the routes that Zuul can use according to the Eureka
 
 5. Open the browser and go to http://localhost:8888/frontend to check how Ribbon works
 
